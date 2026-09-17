@@ -14,7 +14,9 @@
 The benefits of applying quantum technology come not from communication speeds,
 but rather the usefulness of sharing quantum states itself.
 \textbf{Quantum key distribution} (QKD) is one of them:
-to ensure computational security, we use the quantum mechanical principle that
+to ensure information-theoretic security,
+beyond the computational security provided by classical cryptography,
+we use the quantum mechanical principle that
 perfectly discriminating non-orthogonal states is impossible.
 Another is \textbf{quantum teleportation}, where unknown states can be sent far away,
 enabling distributed quantum computing systems.
@@ -34,6 +36,8 @@ measurement probabilities can be determined using the Born rule:
 \section*{Problem 3}
 An unknown quantum state cannot be simply read, copied, and retransmitted as classical information could.
 This is called the \emph{no-cloning theorem}, and it stems from the fact that
+quantum mechanics is inherently linear and unitary.
+The classical approach of measuring and copying fails because
 quantum measurement processes are destructive, i.e., measuring a system
 collapses its state into one of the measurement bases.
 Thus, quantum communication requires \emph{quantum repeaters},
@@ -57,7 +61,8 @@ Therefore, no matter what Alice does with her qubit, Bob's measurement outcomes 
 
     \item \textbf{Decoherence:}
         Photons could interact with their environments, losing the coherent entangled state.
-        This is why quantum channels are typically in vacuum and low temperatures:
+        While optical fibers are placed at ambient temperatures,
+        repeaters operate in vacuum and cryogenic environments
         to reduce the probability of such decohering interactions.
 
     \item \textbf{Probabilistic success:}
@@ -208,7 +213,7 @@ the success probability is given as
 \begin{align*}
     P_{\text{success}}
     &= p \braket{0 | E | 0} + (1 - p) \braket{+ | (I - E) | +} \\
-    &= 1 - p + \tr\left(\left(p\ketbra{0}{0} + (1-p) \ketbra{+}{+}\right) E\right).
+    &= 1 - p + \tr\left(\left(p\ketbra{0}{0} - (1-p) \ketbra{+}{+}\right) E\right).
 \end{align*}
 To maximize the trace in the last expression, $E$ must equal the projection
 onto the positive subspace of $p\ketbra{0}{0} + (1-p)\ketbra{+}{+}$.
@@ -273,7 +278,7 @@ The state is already in Schmidt form, as $\ket{0}$ and $\ket{1}$ are orthonormal
     \rho_A = \cos^2\theta \ketbra{0}{0} + \sin^2\theta\ketbra{1}{1}
 \]
 \[
-    \Rightarrow E_{AB} = S(\rho_A\log_2\rho_A)
+    \Rightarrow E_{AB} = S(\rho_A)
     = -\cos^2\theta\log_2\cos^2\theta - \sin^2\theta\log_2\sin^2\theta
 \]
 (a) $E_{AB}(\theta=0) = 0$ \quad
