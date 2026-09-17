@@ -243,4 +243,23 @@ even though the joint state is coherent.
 Thus, this experiment shows that entanglement is a nonlocal phenomenon
 that cannot be detected by local operations without any communication.
 
+\section*{Problem 17}
+\[
+    \rho_{AB} = \ketbra{\Phi^+}{\Phi^+}
+    \doteq \frac{1}{2} \begin{pmatrix}
+        1 & 0 & 0 & 1 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 1 & 0 & 0 & 1
+    \end{pmatrix}
+\]
+\[
+    \Rightarrow \rho_A = \tr_B \rho_{AB}
+    \doteq \frac{1}{2} \begin{pmatrix}
+        \tr\begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix} &
+        \tr\begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix} \\
+        \tr\begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix} &
+        \tr\begin{pmatrix} 0 & 0 \\ 0 & 1 \end{pmatrix}
+    \end{pmatrix}
+    = \frac{1}{2} \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}
+    = \frac{1}{2} I_A
+\]
+
 \end{document}
