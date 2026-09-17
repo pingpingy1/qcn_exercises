@@ -200,4 +200,20 @@ For the state $\ket{0}$, the outcome probabilities are:
     P(E_1) = \tr\left(E_1\ketbra{0}{0}\right) = \braket{0 | E_1 | 0} = \frac{1}{3}.
 \]
 
+\section*{Problem 15}
+Suppose Bob uses some POVM $\{E, I - E\}\; (0 \leq E \leq I)$ to discriminate the states,
+predicting $\ket{0}$ in the first measurement outcome and $\ket{+}$ in the second.
+If Alice prepares $\ket{0}$ with probability $p$ and $\ket{+}$ with probability $1 - p$,
+the success probability is given as
+\begin{align*}
+    P_{\text{success}}
+    &= p \braket{0 | E | 0} + (1 - p) \braket{+ | (I - E) | +} \\
+    &= 1 - p + \tr\left(\left(p\ketbra{0}{0} + (1-p) \ketbra{+}{+}\right) E\right).
+\end{align*}
+To maximize the trace in the last expression, $E$ must equal the projection
+onto the positive subspace of $p\ketbra{0}{0} + (1-p)\ketbra{+}{+}$.
+Even in such a case, however, because $\ket{0}$ and $\ket{+}$ are non-orthogonal,
+the success probability cannot reach $1$ for any $E$,
+meaning a perfect state discrimination is impossible.
+
 \end{document}
