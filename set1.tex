@@ -125,5 +125,20 @@ This is manifestly evident in the $X$-basis measurement, where:
     \doteq \frac{1}{\sqrt{2}} \begin{pmatrix} 0 \\ 1 \\ 0 \\ 1 \end{pmatrix}
 \]
 
+\section*{Problem 10}
+\begin{align*}
+    \rho
+    &= \frac{1}{2} \left( I + \braket{X} X + \braket{Y} Y + \braket{Z} Z \right) \\
+    &= \frac{1}{2} I + \frac{3}{10} X + \frac{2}{5} Z \\
+    &= \frac{9}{10} \ketbra{0}{0}
+      + \frac{3}{10} \left( \ketbra{0}{1} + \ketbra{1}{0} \right)
+      + \frac{1}{10} \ketbra{1}{1} \\
+    &\doteq \begin{pmatrix}
+        \frac{9}{10} & \frac{3}{10} \\ \frac{3}{10} & \frac{1}{10} 
+    \end{pmatrix}
+\end{align*}
+Simple calculations yield $\rho^2 = \rho$, meaning the state is pure.
+In fact, one could infer this from the fact that $\braket{X}^2 + \braket{Y}^2 + \braket{Z}^2 = 1$.
+
 
 \end{document}
