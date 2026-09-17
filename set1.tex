@@ -47,4 +47,24 @@ This can be readily seen in the reduced density matrix formulation,
 wherein Alice's local operations (unitary or measurement) does not affect Bob's reduced density matrix.
 Therefore, no matter what Alice does with her qubit, Bob's measurement outcomes are unaffected.
 
+\section*{Problem 5}
+\begin{enumerate}
+    \item \textbf{Photon loss:}
+        Photons are probabilistically absorbed or scattered by a realistic fiber optic cable,
+        the likelihood of which increases with the distance travelled.
+        Quantum repeaters mitigate this by breaking up the distance into shorter segments,
+        swapping entanglements with each other and the endpoints.
+
+    \item \textbf{Decoherence:}
+        Photons could interact with their environments, losing the coherent entangled state.
+        This is why quantum channels are typically in vacuum and low temperatures:
+        to reduce the probability of such decohering interactions.
+
+    \item \textbf{Probabilistic success:}
+        Quantum repeater-based schemes often rely on random success events,
+        which introduce temporal delays and could exacerbate the decoherence problem.
+        One can use quantum memories with long lifetimes to hold onto a quantum state
+        while waiting for the protocol to succeed.
+\end{enumerate}
+
 \end{document}
