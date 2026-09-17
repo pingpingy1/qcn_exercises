@@ -67,4 +67,21 @@ Therefore, no matter what Alice does with her qubit, Bob's measurement outcomes 
         while waiting for the protocol to succeed.
 \end{enumerate}
 
+\section*{Problem 6}
+The Bloch vector of a pure state $\ket{\psi}$ is found as
+\[
+    \vec{r} = (\braket{X}, \braket{Y}, \braket{Z}).
+\]
+Or equivalently, in the computational basis $\ket{\psi} = \alpha\ket{0} + \beta\ket{1}$,
+one can find:
+\[
+    \vec{r} = (2\Re\{\alpha^*\beta\}, 2\Im\{\alpha^*\beta\}, |\alpha|^2- |\beta|^2).
+\]
+Therefore, we can find the corresponding Bloch vectors as:
+\begin{itemize}
+    \item $\ket{0} \Rightarrow \vec{r}=(0, 0, 1)$
+    \item $\ket{1} \Rightarrow \vec{r}=(0, 0, -1)$
+    \item $\ket{+} \Rightarrow \vec{r}=(1, 0, 0)$
+\end{itemize}
+
 \end{document}
