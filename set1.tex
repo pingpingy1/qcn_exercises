@@ -216,4 +216,31 @@ Even in such a case, however, because $\ket{0}$ and $\ket{+}$ are non-orthogonal
 the success probability cannot reach $1$ for any $E$,
 meaning a perfect state discrimination is impossible.
 
+\section*{Problem 16}
+Alice's measurements are represented by the PVM:
+\[
+    \Pi_0 = \ketbra{0}{0} \otimes I_B,\quad
+    \Pi_1 = \ketbra{1}{1} \otimes I_B.
+\]
+The probability of either outcome is $\frac{1}{2}$,
+and the joint state collapses to
+\[
+    \begin{cases}
+        \ket{00} & (\text{Outcome: } 0) \\ \ket{11} & (\text{Outcome: } 1).
+    \end{cases}
+\]
+Without classical communication of Alice's measurement outcome,
+Bob's reduced density matrix is the probabilistic mixture $\rho_B = \frac{1}{2} I_B$,
+which is the same as before Alice made her measurement.
+Thus, Alice's measurement did not affect Bob's qubit!
+
+Compared to the joint Bell-state measurement,
+which can be realized by a coordinated measurement between Alice and Bob
+and yields perfect correlation,
+this local measurement differs by the fact that the measurement outcome is not known by Bob.
+Bob's reduced density matrix is equivalent to a probabilistic mixture,
+even though the joint state is coherent.
+Thus, this experiment shows that entanglement is a nonlocal phenomenon
+that cannot be detected by local operations without any communication.
+
 \end{document}
