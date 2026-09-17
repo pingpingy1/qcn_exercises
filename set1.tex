@@ -99,4 +99,22 @@ Therefore, we can find the corresponding Bloch vectors as:
 \]
 This is consistent with the fact that $\ket{\psi}$ is a pure state.
 
+\section*{Problem 8}
+\[
+    \rho_+ := \ketbra{+}{+} = \frac{1}{2} \left(
+        \ketbra{0}{0} + \ketbra{0}{1} + \ketbra{1}{0} + \ketbra{1}{1}
+    \right)
+    \doteq \frac{1}{2} \begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix}
+\]
+\[
+    \rho_{\text{mix}} = \frac{1}{2} \left( \ketbra{0}{0} + \ketbra{1}{1} \right)
+    \doteq \frac{1}{2} \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}
+\]
+The difference lies in the off-diagonal elements, which correlate with how coherent the state is.
+This is manifestly evident in the $X$-basis measurement, where:
+\begin{itemize}
+    \item $P_+(+)=1$ and $P_+(-) = 0$, but
+    \item $P_{\text{mix}}(+) = P_{\text{mix}}(-) = \frac{1}{2}$.
+\end{itemize}
+
 \end{document}
