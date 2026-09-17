@@ -182,6 +182,22 @@ The post-measurement state can be calculated in the PVM formalism as well:
     \Rightarrow \ket{\psi}_1 = \ket{1}
 \]
 
+\section*{Problem 14}
+A POVM is defined to be Hermitian, positive semi-definite operators that sum to unity.
+The given operators form a POVM set:
+\begin{itemize}
+    \item $E_0^\dagger = E_0,\;
+        E_0 \geq 0\; (\because \text{eigenvalues: } \frac{2}{3}, 0)$
 
+    \item $E_1 = \frac{1}{3}\ketbra{0}{0} + \ketbra{1}{1}$, so
+        $E_1^\dagger = E_1,\;
+        E_1 \geq 0\; (\because \text{eigenvalues: } \frac{1}{3}, 1),\;
+        E_0 + E_1 = I$
+\end{itemize}
+For the state $\ket{0}$, the outcome probabilities are:
+\[
+    P(E_0) = \tr\left(E_0\ketbra{0}{0}\right) = \braket{0 | E_0 | 0} = \frac{2}{3},\quad
+    P(E_1) = \tr\left(E_1\ketbra{0}{0}\right) = \braket{0 | E_1 | 0} = \frac{1}{3}.
+\]
 
 \end{document}
