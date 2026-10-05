@@ -1,0 +1,57 @@
+\documentclass[11pt]{article}
+
+\input{preamble}
+
+\title{\coursename (\coursecode)\\Exercise Set 2}
+\author{\studentname}
+\date{\semester}
+
+\begin{document}
+
+\maketitle
+
+\section*{Problem 1}
+\noindent
+(a)
+\[
+    \rho_{AB} \overset{\cdot}{=} \begin{pmatrix}
+        \cos^2\theta & 0 & 0 & \sin\theta\cos\theta \\
+        0 & 0 & 0 & 0 \\
+        \sin\theta\cos\theta & 0 & 0 & \sin^2\theta
+    \end{pmatrix}
+\]
+\[
+    \Rightarrow \rho_A = \tr_B \rho_{AB} \overset{\cdot}{=} \begin{pmatrix}
+        \tr \begin{pmatrix} \cos^2\theta & 0 \\ 0 & 0 \end{pmatrix} &
+        \tr \begin{pmatrix} 0 & \sin\theta\cos\theta \\ 0 & 0 \end{pmatrix} \\
+        \tr \begin{pmatrix} 0 & 0 \\ \sin\theta\cos\theta & 0 \end{pmatrix} &
+        \tr \begin{pmatrix} 0 & 0 \\ 0 & \sin^2\theta \end{pmatrix}
+    \end{pmatrix} = \begin{pmatrix}
+        \cos^2\theta & 0 \\ 0 & \sin^2\theta
+    \end{pmatrix}
+\]
+
+\noindent
+(b) $\rho_B$ is in its diagonal form in the computational basis,
+so its eigenvalues are $\cos^2\theta$ and $\sin^2\theta$.
+\[
+    \Rightarrow S(\rho_A) = -\cos^2\theta\log_2\cos^2\theta - \sin^2\theta\log_2\sin^2\theta
+\]
+
+\noindent
+(c) $S(\rho_A)(\theta=0) = 0,\; S(\rho_A)(\theta=\pi/4) = 1$.
+In fact, the former corresponds to the classical state $\ket{00}$,
+while the latter corresponds to the Bell state
+$\ket{\Phi^+} = \frac{1}{\sqrt{2}} (\ket{00} + \ket{11})$.
+
+\noindent
+(d) \emph{If the global state is known to be pure}, then the fact that
+$\rho_A$ describes a mixed state could allude to global entanglement,
+although no local operation nor measurement can distinguish a mixed state
+from a subsystem of an entangled state with identical reduced density matrices.
+
+\section*{Problem 2}
+
+...
+
+\end{document}
