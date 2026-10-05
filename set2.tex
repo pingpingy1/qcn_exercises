@@ -72,4 +72,44 @@ Along $x$, Alice cannot make any prediction about Bob's outcome.
 as these correlations can only be compared and utilized once the two measurement outcomes
 have been compared at a common point in space.
 
+\section*{Problem 3}
+\noindent
+(a)
+\[
+    C = \begin{pmatrix} \frac{1}{\sqrt{3}} & \frac{1}{\sqrt{6}} \\
+        \frac{1}{\sqrt{6}} & \frac{1}{\sqrt{3}}
+    \end{pmatrix}
+\]
+
+\noindent
+(b)
+\[
+    CC^\dagger = \begin{pmatrix}
+        \frac{1}{2} & \frac{\sqrt{2}}{3} \\ \frac{\sqrt{2}}{3} & \frac{1}{2}
+    \end{pmatrix} = \begin{pmatrix}
+        \frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} \\ \frac{1}{\sqrt{2}} & -\frac{1}{\sqrt{2}}
+    \end{pmatrix} \begin{pmatrix}
+        \frac{3+2\sqrt{2}}{6} & \\ & \frac{3-2\sqrt{2}}{6}
+    \end{pmatrix} \begin{pmatrix}
+        \frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} \\ \frac{1}{\sqrt{2}} & -\frac{1}{\sqrt{2}}
+    \end{pmatrix}
+\]
+Thus, the eigenvalues of $CC^\dagger$ are $(3\pm2\sqrt{2})/6$,
+meaning the Schmidt coefficients are $(\sqrt{2}\pm1)/\sqrt{6}$.
+
+\noindent
+(c) Because the bipartite system is in a pure state,
+the Schmidt rank is an exact criterion for separability.
+Since there are two nonzero Schmidt coefficients, therefore, the system is entangled.
+In fact, the state can be written as:
+\[
+    \ket{\psi} = \frac{\sqrt{2}+1}{\sqrt{6}}\ket{+}\ket{+} + \frac{\sqrt{2}-1}{\sqrt{6}}\ket{-}\ket{-}.
+\]
+
+\noindent
+(d) Local unitary operations act independently on each product state in the Schmidt decomposition,
+yielding yet another product state.
+Thus, the Schmidt coefficients, and consequently the Schmidt rank, are left unchanged.
+This means that entanglement, as a physical resource, cannot be created nor destroyed by local operations.
+
 \end{document}
