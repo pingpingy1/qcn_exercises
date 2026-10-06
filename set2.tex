@@ -171,4 +171,24 @@ $
 (d) The no-cloning theorem states that no unitary process can clone arbitrary non-orthogonal states perfectly.
 This prevents actions like signal amplification for arbitrary quantum channels.
 
+\section*{Problem 7}
+\noindent
+(a) $\left(\bra{\psi_1}^{\otimes N}\right) \left(\ket{\psi_2}^{\otimes N}\right)
+= (\braket{\psi_1|\psi_2})^N = s^N$
+
+\noindent
+(b) The overlap vanishes exponentially to zero as $N\rightarrow\infty$,
+meaning the two states become asymptotically orthogonal and thus distinguishable.
+
+\noindent
+(c) While a single-sample state discrimination is impossible,
+it would be possible if one had an arbitrary cloner:
+clone sufficiently many copies of the given state, and perform the orthogonal state discrimination.
+Thus, the impossibility of non-orthogonal state discrimination implies that of arbitrary state cloning.
+
+\noindent
+(d) $P_e(s=1/2) = (2 - \sqrt{3})/4 \approx 0.067$.
+With a perfect cloner, one could clone the given state to get the refined error bound
+$P_e(s=1/2^N) = (1-\sqrt{1-4^{-N}})/2$, which approaches zero in the limit $N\rightarrow\infty$.
+Thus, a perfect cloning machine could violate the Helstrom error probability bound.
 \end{document}
